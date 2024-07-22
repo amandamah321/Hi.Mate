@@ -1,0 +1,71 @@
+@import url("./global.css");
+
+body {
+  height: 80vh;
+  width: 100%;
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  width: 100%;
+  padding: 2rem;
+}
+
+#map {
+  height: 30rem;
+  width: 35rem;
+  border: 4px solid var(--third-main-color);
+}
+
+/***********RIGHT CONTAINER**************/
+
+.map-left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  color: var(--secondary-color);
+  background-color: var(--third-main-color);
+  -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+  box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+}
+
+.map-left h2 {
+  margin: 10px 0;
+  font-size: var(--section-heading);
+  color: var(--secondary-color);
+  font-weight: 900;
+  text-align: center;
+
+  animation: blink 0.6s ease-in-out infinite;
+}
+
+.map-left p {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  text-align: center;
+}
+
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+
+.contacto-info span i {
+    margin-right: 5px;
+    font-size: 1rem;
+    
+}
+
+@keyframes blink {
+    from{opacity: 1;}
+    to{opacity: 0;}
+}

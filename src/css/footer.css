@@ -1,0 +1,48 @@
+
+/**********FOOTER**********/
+
+footer {
+  color: var(--secondary-color);
+  font-family: monospace;
+  margin-top: 1rem;
+  padding: 30px;
+  text-align: center;
+  background: var(--secondary-bg-color);
+}
+
+.tw,
+.fb,
+.ig {
+  color: var(--font-size-text);
+  display: inline-block;
+  margin: 0 1rem;
+  font-size: 1.6rem;
+}
+
+hr {
+  margin: 1rem 5rem;
+}
+
+.ig:hover {
+  color: #e73033;
+  cursor: pointer;
+}
+
+.fb:hover {
+  color: #3058b5;
+  cursor: pointer;
+}
+
+.tw:hover {
+  color: #00acee;
+  cursor: pointer;
+}
+
+.hecho:hover {
+  font-size: 20px;
+  color: #ff0000;
+}
+
+.rights {
+  font-size: 0.8rem;
+}

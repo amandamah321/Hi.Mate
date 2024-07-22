@@ -1,0 +1,41 @@
+@import url("./navbar.css");
+@import url("./footer.css");
+@import url("./index.css");
+@import url("./galeria.css");
+@import url("./presupuesto.css");
+@import url("./contacto.css");
+
+
+
+/**********VAR**********/
+
+:root {
+  --main-bg-color: #fff;
+  --secondary-bg-color: #f4f0f0;
+  --third-main-color: rgb(255, 251, 0);
+
+  --main-color: #c3bfbf;
+  --secondary-color: #222222;
+
+  --i-size: 1rem;
+
+  --section-heading: 1.5rem;
+  --font-size-text: 1.2rem;
+
+  --border-radius: 25px;
+
+  --section-height: 35rem;
+}
+
+/**********RESET**********/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  max-width: 100vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+

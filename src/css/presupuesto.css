@@ -1,0 +1,160 @@
+@import url("./global.css");
+
+.titulo {
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+
+  color: rgb(255, 251, 0);
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 2rem;
+}
+
+.contenedor {
+  margin: 0 1rem;
+  padding: 2rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+legend {
+  margin-left: 5px;
+}
+
+#form {
+  width: 40%;
+  min-width: 27rem;
+  height: 100%;
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  -webkit-border-radius: 25px;
+  border-radius: var(--border-radius);
+  -webkit-box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+  box-shadow: 12px 12px 24px #b2b8c9, -12px -12px 24px #f0f8ff;
+  border: 3px solid var(--third-main-color);
+  background-color: var(--third-main-color);
+}
+
+.input-contenedor {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.dados-container .input-contenedor label {
+  width: 15rem;
+}
+
+.dados-container .input-contenedor input {
+  width: 100%;
+}
+
+.clases-tipo {
+  display: inline-block;
+}
+
+.clases-tipo p {
+  margin-bottom: 10px;
+}
+
+.presupuesto-container .input-contenedor label {
+  width: 10rem;
+}
+
+.presupuesto-container .input-contenedor input {
+  color: black;
+}
+
+.privacidad-container .input-contenedor {
+  margin: 0.5rem 0;
+}
+
+.privacidad-container .input-contenedor input {
+  margin: 0 0.5rem;
+}
+
+#plazo {
+  width: 3rem;
+}
+
+.button-contenedor button {
+  width: 100%;
+  height: 2rem;
+  text-align: center;
+}
+
+/*******IMAGE*******/
+
+.presupuesto-img {
+  width: 20rem;
+  height: 20rem;
+
+  border-radius: 50%;
+  box-shadow: 8px 0px 0px #f4f0f0, 12px 0px 0px rgb(255, 251, 0);
+
+  object-fit: cover;
+}
+
+/************/
+
+.valido {
+  outline: none;
+  border: 2px solid green;
+}
+
+.invalido {
+  outline: none;
+  border: 2px solid red;
+}
+
+.error {
+  color: red;
+  margin-left: 5px;
+  font-size: 13px;
+}
+
+/**************Media Queries**************/
+
+@media screen and (max-width: 550px) {
+
+  .contenedor {
+    margin: 2rem 10px;
+    padding: 0;
+  }
+
+  #form {
+    width: 100%;
+    padding: 2rem 10px;
+  }
+}
+
+@media screen and (max-width: 455px) {
+
+  #form {
+    width: 100%;
+    padding: 2rem 10px;
+    min-width: 20rem;
+  }
+
+  .dados-container .input-contenedor label {
+    width: 10rem;
+    text-align: center;
+  }
+
+  .presupuesto-container .input-contenedor label {
+    width: 100%;
+  }
+
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi.Mates | English School - Presupuesto</title>
+
+    <link rel="stylesheet" href="../src/css/presupuesto.css">
+
+    <script src="https://kit.fontawesome.com/7819412f9b.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar-container">
+            <div class="logo">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <a href="#">Hi.<span>Mate</span></a>
+            </div>
+
+            <ul class="navbar-list">
+                <li>
+                    <a href="../index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="../pages/galeria.html">Galeria</a>
+                </li>
+                <li>
+                    <a href="../pages/presupuesto.html">Presupuesto</a>
+                </li>
+                <li>
+                    <a href="../pages/contacto.html">Contacto</a>
+                </li>
+            </ul>
+
+            <i class="fa-solid fa-bars"></i>
+
+            <div class="login">
+                <i class="fa-solid fa-user"></i>
+                <a href="#">login</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h2 class="titulo">Planifica tus propias lecciones</h2>
+        <div class="contenedor">
+            <img class="presupuesto-img" src="../src/images/presupuesto.jpg" alt="">
+
+            <form id="form">
+                <fieldset>
+                    <legend>Dados</legend>
+
+                    <div class="dados-container">
+                        <div class="input-contenedor">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre">
+                            <span class="error" id="nombre-error"></span>
+                        </div>
+                        <div class="input-contenedor">
+                            <label for="apellidos">Apellidos:</label>
+                            <input type="text" id="apellidos" name="apellidos">
+                            <span class="error" id="apellidos-error"></span>
+                        </div>
+                        <div class="input-contenedor">
+                            <label for="telefono">Telefono:</label>
+                            <input type="tel" id="telefono" name="telefono">
+                            <span class="error" id="telefono-error"></span>
+                        </div>
+                        <div class="input-contenedor">
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" name="email">
+                            <span class="error" id="email-error"></span>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Presupuesto</legend>
+                    <div class="presupuesto-container">
+
+                        <div class="input-contenedor">
+                            <label for="cursos">Elejir Curso:</label>
+                            <select id="cursos" name="cursos">
+                                <option value="...">&mdash;</option>
+                                <option value="SummerCamp">Summer Camp</option>
+                                <option value="IntensiveB1">Intensive - B1</option>
+                                <option value="IntensiveB2">Intensive - B2</option>
+                                <option value="Chat">Chat class</option>
+                            </select>
+                            <span class="error" id="cursos-error"></span>
+                        </div>
+
+                        <div class="input-contenedor">
+                            <label for="plazo">Tiempo de Clase (meses):</label>
+                            <input type="number" id="plazo" name="plazo">
+                            <span class="error" id="plazo-error"></span>
+                        </div>
+
+                        <div class="input-contenedor clases-tipo">
+                            <p>Elija un tipo de clase (Puedes elejir mas de uno):</p>
+                            <input type="checkbox" id="speaking" name="Speaking" value="Speaking">
+                            <label for="speaking">Speaking</label><br>
+                            <input type="checkbox" id="listening" name="Listening" value="Listening">
+                            <label for="listening">Listening</label><br>
+                            <input type="checkbox" id="reading" name="Reading" value="Reading">
+                            <label for="reading">Reading</label><br>
+                            <input type="checkbox" id="writing" name="Writing" value="Writing">
+                            <label for="writing">Writing</label><br>
+                            <span class="error" id="tipos-error"></span>
+                        </div>
+
+                        <div class="input-contenedor">
+                            <label id="presupuestoFinal">Presupuesto Final:</label>
+                            <input type="text" id="presupuesto">
+                            <span class="error" id="Presupuesto-error"></span>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+                <fieldset>
+                    <legend>Privacidad</legend>
+                    <div class="privacidad-container">
+                        <div class="input-contenedor">
+                            <label for="privacidad">He leido la politica de privacidad</label>
+                            <input type="checkbox" id="privacidad" name="privacidad">
+                            <span class="error" id="privacidad-error"></span>
+                        </div>
+                        <div class="button-contenedor">
+                            <button type="submit">Solicitar Presupuesto</button>
+                        </div>
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="tw"><i class="fab fa-twitter"></i></div>
+        <div class="fb"><i class="fab fa-facebook"></i></div>
+        <div class="ig"><i class="fab fa-instagram"></i></div>
+        <hr>
+        <p class="rights">2024 Copyright © Todos los derechos reservados</p>
+    </footer>
+
+    <script src="../js/presupuesto.js"></script>
+    <script src="../js/navbar.js"></script>
+</body>
+
+</html>

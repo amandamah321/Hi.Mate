@@ -1,0 +1,22 @@
+<classes>
+    <course>
+        <title>Summer Camp</title>
+        <price>€260 monthly</price>
+        <teacher>Alica Smith</teacher>
+    </course>
+    <course>
+        <title>Intensive - B1</title>
+        <price>€220 monthly</price>
+        <teacher>Leonard Rise</teacher>
+    </course>
+    <course>
+        <title>Intensive - B2</title>
+        <price>€245 monthly</price>
+        <teacher>Jorge Glay</teacher>
+    </course>
+    <course>
+        <title>Chat class</title>
+        <price>€180 monthly</price>
+        <teacher>Lara White</teacher>
+    </course>
+</classes>

@@ -1,0 +1,164 @@
+/**********NAVBAR**********/
+
+.navbar-container {
+  background-color: var(--main-bg-color);
+
+  width: 100%;
+  height: 4.5rem;
+  color: var(--main-color);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.logo i {
+  font-size: var(--i-size);
+  color: var(--secondary-color);
+}
+
+.logo a {
+  font-weight: 800;
+  font-size: 1.7rem;
+  cursor: pointer;
+
+  color: #e4e0e0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+
+  margin: 0;
+  text-decoration: none;
+}
+
+.logo a span {
+  color: var(--third-main-color);
+}
+
+/*******nav list*******/
+
+.navbar-list {
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.navbar-list li {
+  list-style: none;
+}
+
+.navbar-list li a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/******hamgurger*******/
+
+.fa-solid.fa-bars {
+  display: none;
+}
+
+/**************/
+
+.login {
+  background-color: var(--third-main-color);
+  color: var(--secondary-color);
+
+  height: 2.5rem;
+  width: 7rem;
+  padding: 1rem;
+  cursor: pointer;
+
+  border-radius: var(--border-radius);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  transition: transform 0.3s ease-in-out;
+}
+
+.login:hover {
+  transform: scale(1.1);
+  border: 2px solid var(--main-bg-color);
+  
+}
+
+.login a {
+  margin: 0;
+  font-size: 1rem;
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+.login i {
+  font-size: var(--i-size);
+  color: var(--secondary-color);
+}
+
+/**************Media Queries**************/
+
+@media screen and (max-width: 880px) {
+  .navbar-list {
+    background-color: var(--third-main-color);
+    width: 12rem;
+    height: 10rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+    position: absolute;
+    top: 4rem;
+    left: 50%;
+    z-index: 1;
+    transform: translateX(-42%);
+    border: 3px solid var(--secondary-color);
+  }
+
+  .navbar-list-hide {
+    display: none;
+  }
+
+  .fa-solid.fa-bars {
+    display: block;
+    font-size: 1.8rem;
+    color: var(--main-color);
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .logo i {
+    font-size: 1rem;
+  }
+
+  .logo a {
+    font-size: 1.3rem;
+  }
+
+  .login {
+    width: 6rem;
+    padding: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .login a {
+    font-size: 1rem;
+  }
+
+  .login i {
+    font-size: 1rem;
+  }
+}
