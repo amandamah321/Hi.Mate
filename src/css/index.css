@@ -69,6 +69,8 @@
   width: 70%;
   font-size: var(--font-size-text);
   color: var(--secondary-color);
+  background-color: var(--main-bg-color);
+  padding: 1rem;
 }
 
 .btn-container-banner {
