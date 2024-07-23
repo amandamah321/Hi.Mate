@@ -1,5 +1,9 @@
 @import url("./global.css");
 
+.contenedor-presupuesto {
+  padding-top: 4.5rem;
+}
+
 .titulo {
   width: 100%;
   text-align: center;

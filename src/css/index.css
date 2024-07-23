@@ -13,6 +13,7 @@
   height: var(--section-height);
   width: 100%;
   padding: 0 2rem;
+  padding-top: 4.5rem;
 
   background-image: url("../images/banner/banner.jpg");
   background-position: center;
